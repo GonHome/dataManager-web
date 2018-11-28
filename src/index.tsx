@@ -4,7 +4,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
-import Home from './containers/home';
+import RootContainer from './containers/RootContainer';
 import store from './store';
 
 const styles: React.CSSProperties = {
@@ -15,7 +15,7 @@ const styles: React.CSSProperties = {
 const Root = () => (
   <div style={styles}>
     <Provider store={store}>
-      <Home />
+      <RootContainer />
     </Provider>
   </div>
 );

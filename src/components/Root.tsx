@@ -1,15 +1,18 @@
-import {Component} from 'react';
+import React, { Component } from 'react';
 import {path} from '../models/models';
 
 type propTypes = {
-    // initRouter: (path: string) => void;
+    initRouter: (paths: path[]) => void;
     paths: path[];
 };
 
 class Root extends Component<propTypes> {
-    // componentDidMount(){
-        // const {initRouter,path} =this.props;
-        // initRouter(path);
-    // }
+    componentDidMount() {
+        const {initRouter, paths} = this.props;
+        initRouter(paths);
+    }
+    render() {
+        return (<div>试试</div>);
+    }
 }
 export default Root;

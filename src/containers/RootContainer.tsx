@@ -1,22 +1,22 @@
 import * as React from 'react';
-import { RootState } from '../store';
+import { stateTypes } from '../reducers';
 import Root from '../components/Root';
 import { connect } from 'react-redux';
-// import * as todosActions from '../actions/actions';
+import { initRouter } from '../actions/RouterActions';
 import * as  RouterConstants from '../constants/RouterConstants';
 import {path} from '../models/models';
 
 type propTypes = {
-    // initRouter: (path: string) => void;
+    initRouter: (paths: path[]) => void;
     paths: path[];
 };
 
 const RootContainer = (props: propTypes) => <Root {...props} />;
 
-const mapStateToProps = (state: RootState) => ({
+const mapStateToProps = (state: stateTypes) => ({
     paths: RouterConstants.paths,
 });
 
 export default connect(mapStateToProps, {
-    // initRouter: (title: string) => todosActions.add({ title })
+    initRouter,
 })(RootContainer);
