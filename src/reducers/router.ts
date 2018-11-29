@@ -3,7 +3,7 @@ import * as routerActions from '../actions/RouterActions';
 import {INITIAL_ROUTE} from '../constants/RouterConstants';
 export type actionTypes = ActionType<typeof routerActions>;
 
-export type stateTypes = Readonly<{
+export type routeTypes = Readonly<{
     keys: any ;
     options: any ;
     path: any ;

@@ -7,13 +7,8 @@ import { Provider } from 'react-redux';
 import RootContainer from './containers/RootContainer';
 import store from './store';
 
-const styles: React.CSSProperties = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-};
-
 const Root = () => (
-  <div style={styles}>
+  <div>
     <Provider store={store}>
       <RootContainer />
     </Provider>
