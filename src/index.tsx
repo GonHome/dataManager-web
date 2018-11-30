@@ -3,9 +3,9 @@ import 'tslib';
 import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-
 import RootContainer from './containers/RootContainer';
 import store from './store';
+import './styles/index.css';
 
 const Root = () => (
   <div>

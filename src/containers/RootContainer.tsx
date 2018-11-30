@@ -14,6 +14,7 @@ type propTypes = {
     paths: path[];
     route: routeTypes;
     routes: any ;
+    headRoutes: any ;
     initEnvironment: () => void;
 };
 
@@ -22,6 +23,7 @@ const RootContainer = (props: propTypes) => <Root {...props} />;
 const mapStateToProps = (state: stateTypes) => ({
     paths: RouterConstants.paths,
     routes: RouterConstants.routes,
+    headRoutes: RouterConstants.headRoutes,
     route: getRoute(state),
 });
 

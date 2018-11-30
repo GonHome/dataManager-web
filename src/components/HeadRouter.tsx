@@ -3,17 +3,17 @@ import * as React from 'react';
 
 type propTypes = {
     route: routeTypes;
-    routes: any ;
+    headRoutes: any ;
 };
 
-const Router = ({route, routes}: propTypes ) => {
+const HeadRouter = ({route, headRoutes}: propTypes ) => {
     const {path} = route;
-    if ( path in routes ) {
-        const Component = routes[path];
+    if ( path in headRoutes ) {
+        const Component = headRoutes[path];
         return (<Component />);
     } else {
-        return (<div>路径不对啊</div>);
+        return null ;
     }
 };
 
-export default Router;
+export default HeadRouter;

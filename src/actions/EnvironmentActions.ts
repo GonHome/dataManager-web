@@ -6,3 +6,9 @@ export const initEnvironment = createStandardAction(ActionTypes.WINDOW_RESIZE).m
         return { height: window.innerHeight, width: window.innerWidth };
     }
 );
+
+export const exploitMouseMoveLeft = createStandardAction(ActionTypes.EXPLOIT_MOVE_LEFT).map(
+    (leftWidth: number) => {
+        return { leftWidth };
+    }
+);
