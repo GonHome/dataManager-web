@@ -3,12 +3,6 @@ import * as environmentActions from '../actions/EnvironmentActions';
 import * as CommonConstants from '../constants/CommonConstants';
 export type actionTypes = ActionType<typeof environmentActions>;
 
-export type routeTypes = Readonly<{
-    height: number ;
-    width: number ;
-    leftWidth: number ;
-}>;
-
 const initialState = {
     height: window.innerHeight,
     width: window.innerWidth,
