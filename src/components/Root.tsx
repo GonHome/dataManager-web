@@ -3,7 +3,7 @@ import {path} from '../models/models';
 import {routeTypes} from '../reducers/router';
 import Router from './Router';
 import HeadRouter from './HeadRouter';
-
+import '../styles/index.scss';
 type propTypes = {
     initRouter: (paths: path[]) => void;
     paths: path[];
@@ -23,7 +23,7 @@ class Root extends Component<propTypes> {
     render() {
         const {route, routes, headRoutes} = this.props;
         return (
-            <div>
+            <div className={'body'}>
                 <HeadRouter route={route} headRoutes={headRoutes} />
                 <Router route={route} routes={routes} />
             </div>);
