@@ -30,6 +30,7 @@
     "@types/react-redux": "5",
     "@types/react-router-dom": "4.2.6",
     "@types/react-router-redux": "5.0.14",
+    "@types/redux-logger": "^3.0.6",
     "cuid": "2.1.1",
     "immutable": "^4.0.0-rc.12",
     "jest": "22.4.3",
