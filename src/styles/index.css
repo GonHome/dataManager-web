@@ -7,6 +7,7 @@
 @import '~@blueprintjs/table/lib/css/table.css';
 @import './index.scss';
 @import './exploit.scss';
+@import '~antd/dist/antd.css';
 
 :focus {
     outline: rgba(19, 124, 189, 0.6) auto 0;

@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="787d00ea-3d18-40bb-8801-ff89763c6b9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/actions/DataSourceActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/DataSourceBoard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/head/DataSourceHead.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/DataSourceContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/head/DataSourceHeadContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/dataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/dataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/dataSource.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/RouterUtil.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/ExploitActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ExploitActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/center/BoardTag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/center/BoardTag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/center/MainBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/center/MainBoard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ExploitContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ExploitContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/exploit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/exploit.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/selectots/ExploitSelectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectots/ExploitSelectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/RouterActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/RouterActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/ActionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ActionTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/RouterConstants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/RouterConstants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/exploit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/exploit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,27 +51,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="9" />
+          <entry key="css" value="10" />
           <entry key="gitignore" value="1" />
           <entry key="js" value="33" />
-          <entry key="json" value="20" />
+          <entry key="json" value="22" />
           <entry key="md" value="2" />
-          <entry key="scss" value="14" />
+          <entry key="scss" value="21" />
           <entry key="svg" value="1" />
-          <entry key="ts" value="179" />
-          <entry key="tsx" value="202" />
+          <entry key="ts" value="205" />
+          <entry key="tsx" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="9" />
-          <entry key="JSON" value="18" />
+          <entry key="CSS" value="10" />
+          <entry key="JSON" value="20" />
           <entry key="JavaScript" value="33" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="SCSS" value="14" />
+          <entry key="SCSS" value="21" />
           <entry key="SVG" value="1" />
-          <entry key="TypeScript" value="179" />
-          <entry key="TypeScript JSX" value="202" />
+          <entry key="TypeScript" value="205" />
+          <entry key="TypeScript JSX" value="218" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -73,28 +82,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="303" />
+          <entry key="css" value="320" />
           <entry key="gitignore" value="7" />
           <entry key="html" value="10" />
           <entry key="js" value="112" />
           <entry key="json" value="17" />
           <entry key="md" value="2" />
-          <entry key="scss" value="1967" />
-          <entry key="ts" value="5192" />
-          <entry key="tsx" value="15368" />
+          <entry key="scss" value="2208" />
+          <entry key="ts" value="6445" />
+          <entry key="tsx" value="17422" />
           <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="303" />
+          <entry key="CSS" value="320" />
           <entry key="HTML" value="10" />
           <entry key="JSON" value="16" />
           <entry key="JavaScript" value="112" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="SCSS" value="1967" />
-          <entry key="TypeScript" value="5192" />
-          <entry key="TypeScript JSX" value="15368" />
+          <entry key="SCSS" value="2208" />
+          <entry key="TypeScript" value="6445" />
+          <entry key="TypeScript JSX" value="17422" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -102,11 +111,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="156">
+              <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -115,34 +124,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/center/MainBoard.tsx">
+        <entry file="file://$PROJECT_DIR$/src/styles/exploit.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="209">
+              <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/dataSource.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/DataSourceActions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/center/DefaultBoard.tsx">
+        <entry file="file://$PROJECT_DIR$/src/actions/ExploitActions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+            <state relative-caret-position="57">
+              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/ExploitContainer.tsx">
+        <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="242">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/DataSourceContainer.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -151,22 +187,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx">
+        <entry file="file://$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/DataSourceBoard.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -175,34 +208,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx">
+        <entry file="file://$PROJECT_DIR$/src/reducers/dataSource.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+            <state relative-caret-position="156">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/exploit/center/BoardTag.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/selectots/ExploitSelectors.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -211,9 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>closeOnSelect</find>
-      <find>minimal</find>
-      <find>openOnKeyDown</find>
       <find>resetOnSelect</find>
       <find>resetOnQuery</find>
       <find>函数</find>
@@ -241,6 +250,9 @@
       <find>boardMap</find>
       <find>switchBoardMap</find>
       <find>BoardMap</find>
+      <find>nav</find>
+      <find>exploit</find>
+      <find>scss</find>
     </findStrings>
     <dirStrings>
       <dir>E:\newspace\2019\dataManager-web\node_modules</dir>
@@ -255,24 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/HeadRouter.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/head/ExploitHeadContainer.tsx" />
-        <option value="$PROJECT_DIR$/src/constants/CommonConstants.ts" />
-        <option value="$PROJECT_DIR$/src/components/head/ExploitHead.tsx" />
-        <option value="$PROJECT_DIR$/src/actions/EnvironmentActions.ts" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/ExploitLeftMove.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/LeftSiderBar.tsx" />
-        <option value="$PROJECT_DIR$/src/index.tsx" />
-        <option value="$PROJECT_DIR$/src/reducers/index.ts" />
-        <option value="$PROJECT_DIR$/src/reducers/environment.ts" />
-        <option value="$PROJECT_DIR$/src/styles/index.css" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/util/ExploitUtil.ts" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/LeftSideBar.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/LeftAddMenu.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/dialog/DatabaseDialog.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/dialog/FunctionDialog.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/dialog/OfflineTaskDialog.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/dialog/RealTimeTaskDialog.tsx" />
@@ -286,11 +280,8 @@
         <option value="$PROJECT_DIR$/src/components/exploit/main/DefaultBoard.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/main/MainBoard.tsx" />
         <option value="$PROJECT_DIR$/src/selectots/CommonSelectors.ts" />
-        <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/components/Root.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/center/DefaultBoard.tsx" />
-        <option value="$PROJECT_DIR$/src/styles/exploit.scss" />
-        <option value="$PROJECT_DIR$/src/constants/ActionTypes.ts" />
         <option value="$PROJECT_DIR$/src/store/store.ts" />
         <option value="$PROJECT_DIR$/src/constants/ExploitConstants.ts" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -306,6 +297,27 @@
         <option value="$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/center/BoardTag.tsx" />
         <option value="$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx" />
+        <option value="$PROJECT_DIR$/src/styles/exploit.scss" />
+        <option value="$PROJECT_DIR$/src/containers/head/DataSourceHeadContainer.tsx" />
+        <option value="$PROJECT_DIR$/src/components/head/DataSourceHead.tsx" />
+        <option value="$PROJECT_DIR$/src/styles/index.css" />
+        <option value="$PROJECT_DIR$/node_modules/antd/lib/config-provider/index.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/antd/lib/layout/Sider.d.ts" />
+        <option value="$PROJECT_DIR$/src/models/dataSource.ts" />
+        <option value="$PROJECT_DIR$/src/styles/index.scss" />
+        <option value="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/index.ts" />
+        <option value="$PROJECT_DIR$/src/constants/RouterConstants.ts" />
+        <option value="$PROJECT_DIR$/src/util/RouterUtil.ts" />
+        <option value="$PROJECT_DIR$/src/actions/RouterActions.ts" />
+        <option value="$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts" />
+        <option value="$PROJECT_DIR$/src/constants/ActionTypes.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/dataSource.ts" />
+        <option value="$PROJECT_DIR$/src/containers/DataSourceContainer.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/DataSourceBoard.tsx" />
+        <option value="$PROJECT_DIR$/src/actions/DataSourceActions.ts" />
+        <option value="$PROJECT_DIR$/src/styles/dataSource.scss" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx" />
       </list>
     </option>
   </component>
@@ -354,20 +366,7 @@
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="exploit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
@@ -379,7 +378,7 @@
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="selectots" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,16 +398,16 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\newspace\2019\dataManager-web\src\models" />
+      <recent name="E:\newspace\2019\dataManager-web\src\actions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\newspace\2019\dataManager-web\src\components\exploit\left" />
       <recent name="E:\newspace\2019\dataManager-web\src\components" />
       <recent name="E:\newspace\2019\dataManager-web\src\reducers" />
       <recent name="E:\newspace\2019\dataManager-web\src\selectots" />
       <recent name="E:\newspace\2019\dataManager-web\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\newspace\2019\dataManager-web\src\models" />
-      <recent name="E:\newspace\2019\dataManager-web\src\actions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -518,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243525000" />
+    <option name="totallyTimeSpent" value="273756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,276 +586,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="开发套件" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../node_modules/immutable/dist/immutable-nonambient.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="414" column="16" selection-start-line="414" selection-start-column="16" selection-end-line="414" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/EnvironmentActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typesafe-actions/src/create-standard-action.ts" />
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftSideBar.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/core/src/components/tree/tree.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/actions/RouterActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/left/ExploitLeftMove.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftAddMenu.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/FunctionDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/OfflineTaskDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/RealTimeTaskDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/ResourceFileDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/TableManageDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/TemporaryTaskDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/WorkFlowDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/select/src/components/select/suggest.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/films.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/exploit.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/DatabaseManageDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Root.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/RootContainer.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selectots/CommonSelectors.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/head/ExploitHeadContainer.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/immutable/dist/immutable-nonambient.d.ts" />
-    <entry file="file://$PROJECT_DIR$/src/styles/exploit.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="195" column="26" selection-start-line="195" selection-start-column="26" selection-end-line="195" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/redux-logger/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/src/store/store.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ExploitConstants.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/root-epic.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/bin/react-scripts-ts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2095">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/utils/createJestConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1582" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dev-utils/openBrowser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1097">
           <caret line="236" column="50" selection-start-line="236" selection-start-column="50" selection-end-line="236" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ExploitActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/exploit.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/ExploitContainer.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,13 +610,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selectots/ExploitSelectors.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -909,8 +635,360 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/head/ExploitHeadContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="18" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/head/ExploitHead.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectots/CommonSelectors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/head/DataSourceHeadContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ExploitConstants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/CommonConstants.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/head/DataSourceHead.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/films.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/FunctionDialog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="30" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="22" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/menu/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/antd/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/node_modules/create-react-context/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/config-provider/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/layout/Sider.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/exploit.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/dataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/path-to-regexp/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/ExploitUtil.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/DataSourceConstants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/RouterActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/RouterUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/RouterConstants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/ExploitContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/RootContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/exploit.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectots/ExploitSelectors.ts">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ExploitActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/dataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/DataSourceContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/DataSourceBoard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/DataSourceActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/exploit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/dataSource.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
