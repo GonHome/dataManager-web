@@ -42,6 +42,19 @@
   .ant-input{
     font-size: 12px;
   }
+  .source-type{
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    color: black;
+    padding-left: 15px;
+  }
+  .source-type:hover{
+    background-color:#cdf0ff;
+  }
+  .active{
+    background-color:#cdf0ff;
+  }
 }
 
 

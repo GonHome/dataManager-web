@@ -45,3 +45,4 @@ export const LEFT_MENUS = [
             {name: '数据元管理', path: 'system/dataElement', component: null, children: []},
         ]},
     ];
+export const sourceTypes = ['SQLServer', 'HBase', 'Oracle', 'Mysql', 'PostgreSql', 'Hana', 'Gbase', 'Solr', 'ZooKeeper', '阿里云OSS'];

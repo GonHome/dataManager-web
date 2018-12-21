@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import MetadataMachineForm from '../form/MetadataMachineForm';
+import MetadataMachineForm from '../../form/MetadataMachineForm';
 type propTypes = {
     details: any;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
 };
-class MetadataMachineDialog extends Component<propTypes> {
+class MachineDialog extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -37,4 +37,4 @@ class MetadataMachineDialog extends Component<propTypes> {
         );
     }
 }
-export default MetadataMachineDialog;
+export default MachineDialog;

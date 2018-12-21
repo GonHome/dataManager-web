@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tree, Table, Pagination } from 'antd';
 import {InputGroup, Button, Intent, ButtonGroup} from '@blueprintjs/core';
-import MetadataMachineDialog from '../../dialog/MetadataMachineDialog';
+import MachineDialog from '../../dialog/metadata/MachineDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
@@ -66,8 +66,10 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
             width: '15%',
         }];
         if (!isAction) {
-            columns[0].width = '40%';
             columns.push({title: '操作', dataIndex: 'action', width: '20%'});
+        } else {
+            columns[0].width = '30%';
+            columns[1].width = '25%';
         }
         const data = [{
             key: '1',
@@ -118,7 +120,7 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
                         </div>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} />
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <MetadataMachineDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
+                        {isDialog ? <MachineDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
                     </div>
                 </div>
             </div>

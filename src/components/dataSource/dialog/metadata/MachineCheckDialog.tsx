@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Modal, Button, notification, LocaleProvider } from 'antd';
-import MetadataMachine from '../center/submodule/MetadataMachine';
-import zh_CN from '../../../../node_modules/antd/lib/locale-provider/zh_CN';
+import MetadataMachine from '../../center/submodule/MetadataMachine';
+import zh_CN from '../../../../../node_modules/antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
-import '../../../../node_modules/moment/locale/zh-cn';
+import '../../../../../node_modules/moment/locale/zh-cn';
 moment.locale('zh-cn');
 type propTypes = {
     selectedRowKeys: string[];

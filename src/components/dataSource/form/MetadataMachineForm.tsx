@@ -130,7 +130,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                             message: '请输入密码',
                                         },
                                     ],
-                                })(<Input size={'small'} placeholder={'请输入密码'}  />)
+                                })(<Input size={'small'} placeholder={'请输入密码'} type={'password'}  />)
                                 }
                             </FormItem>
                         </Col>

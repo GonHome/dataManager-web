@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tree, Table, Pagination } from 'antd';
 import {InputGroup, Button, Intent, ButtonGroup} from '@blueprintjs/core';
-import MetadataAppSystemDialog from '../../dialog/MetadataAppSystemDialog';
+import AppSystemDialog from '../../dialog/metadata/AppSystemDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
@@ -96,7 +96,7 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
                         </div>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} />
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <MetadataAppSystemDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
+                        {isDialog ? <AppSystemDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
                     </div>
                 </div>
             </div>

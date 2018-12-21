@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Row, Col, Input, Select} from 'antd';
 import {Icon} from '@blueprintjs/core';
-import MetadataMachineCheckDialog from '../dialog/MetadataMachineCheckDialog';
+import MetadataMachineCheckDialog from '../dialog/metadata/MachineCheckDialog';
 const FormItem = Form.Item;
 const Option = Select.Option;
 type propTypes = {

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import MetadataAppSystemForm from '../form/MetadataAppSystemForm';
+import MetadataAppSystemForm from '../../form/MetadataAppSystemForm';
 type propTypes = {
     details: any;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
 };
-class MetadataAppSystemDialog extends Component<propTypes> {
+class AppSystemDialog extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -38,4 +38,4 @@ class MetadataAppSystemDialog extends Component<propTypes> {
         );
     }
 }
-export default MetadataAppSystemDialog;
+export default AppSystemDialog;
