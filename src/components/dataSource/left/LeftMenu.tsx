@@ -7,7 +7,6 @@ const SubMenu = Menu.SubMenu;
 type propTypes = {
     height: number;
     width: number;
-    rightWidth: number;
     leftMenus: dataSource.leftMenu[];
     route: routeTypes;
     changeOpenKeys: (openKeys: string[]) => void;
