@@ -5,9 +5,9 @@
 @import '~@blueprintjs/datetime/lib/css/blueprint-datetime.css';
 @import '~@blueprintjs/select/lib/css/blueprint-select.css';
 @import '~@blueprintjs/table/lib/css/table.css';
+@import '~antd/dist/antd.css';
 @import './index.scss';
 @import './exploit.scss';
-@import '~antd/dist/antd.css';
 
 :focus {
     outline: rgba(19, 124, 189, 0.6) auto 0;

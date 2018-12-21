@@ -66,7 +66,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '服务器名称需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入服务器名称',
@@ -92,7 +92,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: 'IP地址需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入IP地址',
@@ -108,7 +108,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '用户名需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入用户名',
@@ -124,7 +124,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '密码需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入密码',
@@ -164,7 +164,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '联系人姓名需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入联系人姓名',
@@ -180,7 +180,7 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '联系方式需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请输入联系方式',
@@ -197,7 +197,14 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                     <Row gutter={24}>
                         <Col span={8}>
                             <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'CPU数目'} >
-                                {getFieldDecorator('cpuNum', {})(<div><Input size={'small'} placeholder={'例如: 2'}  style={{width: 155}} />&nbsp;个</div>)}
+                                {getFieldDecorator('cpuNum', {
+                                    rules: [
+                                        {
+                                            type: 'number',
+                                            message: 'CPU数目需为数字格式',
+                                        },
+                                    ],
+                                })(<div><Input size={'small'} placeholder={'例如: 2'}  style={{width: 155}} />&nbsp;个</div>)}
                             </FormItem>
                         </Col>
                         <Col span={8}>
@@ -207,17 +214,38 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                         </Col>
                         <Col span={8}>
                             <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'硬盘空间'} >
-                                {getFieldDecorator('diskNum', {})(<div><Input size={'small'} placeholder={'例如: 500'}  style={{width: 140}} />&nbsp;GB</div>)}
+                                {getFieldDecorator('diskNum', {
+                                    rules: [
+                                        {
+                                            type: 'number',
+                                            message: '硬盘空间需为数字格式',
+                                        },
+                                    ],
+                                })(<div><Input size={'small'} placeholder={'例如: 500'}  style={{width: 140}} />&nbsp;GB</div>)}
                             </FormItem>
                         </Col>
                         <Col span={8}>
                             <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'每个CPU核数'} >
-                                {getFieldDecorator('nucleusNum', {})(<div><Input size={'small'} placeholder={'例如: 8'}  style={{width: 155}} />&nbsp;核</div>)}
+                                {getFieldDecorator('nucleusNum', {
+                                    rules: [
+                                        {
+                                            type: 'number',
+                                            message: '每个CPU核数需为数字格式',
+                                        },
+                                    ],
+                                })(<div><Input size={'small'} placeholder={'例如: 8'}  style={{width: 155}} />&nbsp;核</div>)}
                             </FormItem>
                         </Col>
                         <Col span={8}>
                             <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'内存空间'} >
-                                {getFieldDecorator('nucleusNum', {})(<div><Input size={'small'} placeholder={'例如: 16'}  style={{width: 140}} />&nbsp;GB</div>)}
+                                {getFieldDecorator('memoryNum', {
+                                    rules: [
+                                        {
+                                            type: 'number',
+                                            message: '内存空间需为数字格式',
+                                        },
+                                    ],
+                                })(<div><Input size={'small'} placeholder={'例如: 16'}  style={{width: 140}} />&nbsp;GB</div>)}
                             </FormItem>
                         </Col>
                         <Col span={8}>
@@ -226,19 +254,22 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
                                     rules: [
                                         {
                                             type: 'string',
-                                            message: '',
+                                            message: '主机类型需为字符串格式',
                                         }, {
                                             required: true,
                                             message: '请选择主机类型',
                                         },
                                     ],
                                 })(
-                                    <Select size={'small'} placeholder={'请选择主机类型'} style={{width: 140}}>
-                                        <Option value="1">物理机</Option>
-                                        <Option value="2">虚拟机</Option>
-                                        <Option value="3">云主机</Option>
-                                        <Option value="4">其他</Option>
-                                    </Select>
+                                    <div style={{width: 140}}>
+                                        <Select size={'small'} placeholder={'请选择主机类型'}>
+                                            <Option value="1">物理机</Option>
+                                            <Option value="2">虚拟机</Option>
+                                            <Option value="3">云主机</Option>
+                                            <Option value="4">其他</Option>
+                                        </Select>
+                                    </div>
+
                                 )}
                             </FormItem>
                         </Col>

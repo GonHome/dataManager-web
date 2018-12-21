@@ -24,12 +24,20 @@
     border: 1px solid #efecf1;
     padding: 5px;
     margin:5px 0;
+    .form-tags{
+      width: 400px;
+      line-height: 24px;
+      height: 28px;
+      border: 1px solid #d9d9d9;
+      margin-top: 5px;
+      .bp3-icon{
+        margin-left: 370px;
+        cursor: pointer;
+      }
+    }
   }
   .ant-select{
     font-size: 12px;
-    .ant-select-arrow, form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-selection__clear{
-      right: 8px;
-    }
   }
   .ant-input{
     font-size: 12px;

@@ -15,7 +15,7 @@ type stateTypes = {
     isEditable: boolean;
     title: string;
 };
-class MetadataMachine extends Component<propTypes, stateTypes> {
+class MetadataSource extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
@@ -125,4 +125,4 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
         );
     }
 }
-export default MetadataMachine;
+export default MetadataSource;

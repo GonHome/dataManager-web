@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import MetadataMachineForm from '../form/MetadataMachineForm';
+import MetadataAppSystemForm from '../form/MetadataAppSystemForm';
 type propTypes = {
     details: any;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
 };
-class MetadataMachineDialog extends Component<propTypes> {
+class MetadataAppSystemDialog extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
     onClose = () => {
-      const {changeDialog} = this.props;
-      changeDialog(false, null, true, '');
+        const {changeDialog} = this.props;
+        changeDialog(false, null, true, '');
     };
     render() {
         const {title} = this.props;
-        const WrappedForm = Form.create()(MetadataMachineForm);
+        const WrappedForm = Form.create()(MetadataAppSystemForm);
         return (
             <Modal
                 className={'small-modal'}
@@ -26,6 +26,7 @@ class MetadataMachineDialog extends Component<propTypes> {
                 title={title}
                 width={950}
                 style={{top: 20}}
+                bodyStyle={{padding: 12}}
                 onCancel={this.onClose}
                 footer={[
                     <Button size={'small'} key="submit" type="primary" >保存</Button>,
@@ -37,4 +38,4 @@ class MetadataMachineDialog extends Component<propTypes> {
         );
     }
 }
-export default MetadataMachineDialog;
+export default MetadataAppSystemDialog;

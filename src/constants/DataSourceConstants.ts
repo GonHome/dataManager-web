@@ -1,9 +1,11 @@
 import MetadataMachine from '../components/dataSource/center/submodule/MetadataMachine';
+import MetadataAppSystem from '../components/dataSource/center/submodule/MetadataAppSystem';
+import MetadataSource from '../components/dataSource/center/submodule/MetadataSource';
 export const LEFT_MENUS = [
     {name: '元数据管理', path: 'metadata', component: null, children: [
-            {name: '服务器注册管理', path: 'metadata/machine', children: [], component: MetadataMachine},
-            {name: '应用系统注册管理', path: 'metadata/appSystem', component: null, children: []},
-            {name: '数据源注册管理', path: 'metadata/dataSource', component: null, children: []},
+            {name: '服务器注册管理', path: 'metadata/machine', component: MetadataMachine, children: []},
+            {name: '应用系统注册管理', path: 'metadata/appSystem', component: MetadataAppSystem, children: []},
+            {name: '数据源注册管理', path: 'metadata/dataSource', component: MetadataSource, children: []},
             {name: '数据对象注册管理', path: 'metadata/dataObject', component: null, children: []},
             {name: '信息代码注册管理', path: 'metadata/infoCode', component: null, children: []},
             {name: '数据规范', path: 'metadata/dataStandard', component: null, children: []},
