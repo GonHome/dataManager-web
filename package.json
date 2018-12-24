@@ -11,7 +11,7 @@
     "lint": "tslint -p ./",
     "tsc": "tsc -p ./ --noEmit",
     "tsc:watch": "tsc -p ./ --noEmit -w",
-    "start": "react-scripts-ts start",
+    "start": "react-app-rewired start --scripts-version react-scripts-ts",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
@@ -37,6 +37,7 @@
     "immutable": "^4.0.0-rc.12",
     "node-sass": "^4.10.0",
     "path-to-regexp": "^2.4.0",
+    "react-app-rewired": "^1.6.2",
     "react-flexbox-grid": "^2.1.2",
     "react-scripts-ts": "2.16.0",
     "redux": "4.0.0",
