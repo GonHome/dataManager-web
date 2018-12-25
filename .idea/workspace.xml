@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="787d00ea-3d18-40bb-8801-ff89763c6b9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppCheckDialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataSourceForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/AliyunForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/GbaseForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HBaseForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HanaForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/MysqlForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/OracleForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/PostgreSqlForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SolrForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SqlServerForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/ZookeeperForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppSystemDialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppSystemDialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineDialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineDialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/form/MetadataAppSystemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataAppSystemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dataSource/form/MetadataMachineForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataMachineForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,13 +58,13 @@
           <entry key="css" value="12" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="40" />
+          <entry key="js" value="41" />
           <entry key="json" value="24" />
           <entry key="md" value="3" />
-          <entry key="scss" value="27" />
+          <entry key="scss" value="31" />
           <entry key="svg" value="1" />
-          <entry key="ts" value="215" />
-          <entry key="tsx" value="256" />
+          <entry key="ts" value="219" />
+          <entry key="tsx" value="304" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -50,12 +72,12 @@
           <entry key="CSS" value="12" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="22" />
-          <entry key="JavaScript" value="40" />
+          <entry key="JavaScript" value="41" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="SCSS" value="27" />
+          <entry key="SCSS" value="31" />
           <entry key="SVG" value="1" />
-          <entry key="TypeScript" value="215" />
-          <entry key="TypeScript JSX" value="256" />
+          <entry key="TypeScript" value="219" />
+          <entry key="TypeScript JSX" value="304" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -72,9 +94,9 @@
           <entry key="js" value="156" />
           <entry key="json" value="17" />
           <entry key="md" value="2" />
-          <entry key="scss" value="2941" />
-          <entry key="ts" value="6693" />
-          <entry key="tsx" value="24834" />
+          <entry key="scss" value="2991" />
+          <entry key="ts" value="7076" />
+          <entry key="tsx" value="26860" />
           <entry key="txt" value="43" />
         </counts>
       </usages-collector>
@@ -85,9 +107,9 @@
           <entry key="JSON" value="16" />
           <entry key="JavaScript" value="156" />
           <entry key="PLAIN_TEXT" value="52" />
-          <entry key="SCSS" value="2941" />
-          <entry key="TypeScript" value="6693" />
-          <entry key="TypeScript JSX" value="24834" />
+          <entry key="SCSS" value="2991" />
+          <entry key="TypeScript" value="7076" />
+          <entry key="TypeScript JSX" value="26860" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -96,28 +118,118 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataSourceForm.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-603">
-              <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-overrides.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="1781">
+              <caret line="124" column="39" lean-forward="true" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="190">
+              <caret line="61" column="143" selection-start-line="61" selection-start-column="143" selection-end-line="61" selection-end-column="143" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppCheckDialog.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataAppSystemForm.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="289" column="121" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="121" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataMachineForm.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4674">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +238,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jest</find>
-      <find>classnames</find>
-      <find>prop-types</find>
-      <find>react-router-redux</find>
       <find>react-router-dom</find>
       <find>sass</find>
       <find>updateBoardMap</find>
@@ -156,6 +264,10 @@
       <find>classname</find>
       <find>classNames</find>
       <find>3000</find>
+      <find>s</find>
+      <find>source-t</find>
+      <find>ba</find>
+      <find>部署服务器</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -173,32 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/exploit/center/DefaultBoard.tsx" />
-        <option value="$PROJECT_DIR$/src/store/store.ts" />
-        <option value="$PROJECT_DIR$/src/constants/ExploitConstants.ts" />
-        <option value="$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-scripts-ts/config/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/src/actions/ExploitActions.ts" />
-        <option value="$PROJECT_DIR$/src/reducers/exploit.ts" />
-        <option value="$PROJECT_DIR$/src/containers/ExploitContainer.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/ExploitBoard.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/LeftBoard.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/center/MainBoard.tsx" />
-        <option value="$PROJECT_DIR$/src/selectots/ExploitSelectors.ts" />
-        <option value="$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/center/BoardTag.tsx" />
-        <option value="$PROJECT_DIR$/src/components/exploit/center/BoardTags.tsx" />
-        <option value="$PROJECT_DIR$/src/styles/exploit.scss" />
-        <option value="$PROJECT_DIR$/src/containers/head/DataSourceHeadContainer.tsx" />
-        <option value="$PROJECT_DIR$/src/components/head/DataSourceHead.tsx" />
-        <option value="$PROJECT_DIR$/src/reducers/index.ts" />
-        <option value="$PROJECT_DIR$/src/constants/RouterConstants.ts" />
-        <option value="$PROJECT_DIR$/src/util/RouterUtil.ts" />
-        <option value="$PROJECT_DIR$/src/actions/RouterActions.ts" />
-        <option value="$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts" />
-        <option value="$PROJECT_DIR$/src/constants/ActionTypes.ts" />
-        <option value="$PROJECT_DIR$/src/reducers/dataSource.ts" />
-        <option value="$PROJECT_DIR$/src/actions/DataSourceActions.ts" />
         <option value="$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx" />
         <option value="$PROJECT_DIR$/src/containers/DataSourceContainer.tsx" />
         <option value="$PROJECT_DIR$/src/components/dataSource/DataSourceBoard.tsx" />
@@ -209,21 +295,47 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/styles/index.css" />
         <option value="$PROJECT_DIR$/src/components/dataSource/dialog/MetadataMachineDialog.tsx" />
-        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx" />
         <option value="$PROJECT_DIR$/src/components/dataSource/dialog/MetadataAppSystemDialog.tsx" />
         <option value="$PROJECT_DIR$/src/components/dataSource/dialog/MetadataMachineCheckDialog.tsx" />
-        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx" />
         <option value="$PROJECT_DIR$/src/styles/dataSource.scss" />
         <option value="$PROJECT_DIR$/src/components/dataSource/form/MetadataAppSystemForm.tsx" />
-        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx" />
-        <option value="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" />
-        <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/components/dataSource/form/MetadataMachineForm.tsx" />
-        <option value="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx" />
         <option value="$PROJECT_DIR$/node_modules/antd/lib/config-provider/index.d.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/node_modules/antd/lib/layout/Sider.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js" />
         <option value="$PROJECT_DIR$/config-overrides.js" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/MetadataSourceForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/AliyunForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/GbaseForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/HanaForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/MysqlForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/OracleForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/PostgreSqlForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/SolrForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/SqlServerForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/ZookeeperForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/HbaseForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/databaseForms/HBaseForm.tsx" />
+        <option value="$PROJECT_DIR$/src/constants/DataSourceConstants.ts" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HBaseForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SqlServerForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/MysqlForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/OracleForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/PostgreSqlForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/GbaseForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SolrForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HanaForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/ZookeeperForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/AliyunForm.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataSourceForm.tsx" />
+        <option value="$PROJECT_DIR$/src/styles/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppCheckDialog.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx" />
+        <option value="$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx" />
       </list>
     </option>
   </component>
@@ -265,33 +377,83 @@
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="antd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="antd" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="react-scripts-ts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="center" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="react-scripts-ts" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="center" type="462c0819:PsiDirectoryNode" />
+              <item name="submodule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataManager-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataManager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,7 +463,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="start&#9;FILE&#9;file://E:/newspace/2019/dataManager-web/node_modules/react-scripts-ts/scripts/start.js&#10;start.js&#9;FILE&#9;file://E:/newspace/2019/dataManager-web/node_modules/react-scripts-ts/scripts/start.js" />
+    <property name="SearchEverywhereHistoryKey" value="routeRc&#9;FILE&#9;file://E:/newspace/2019/dataManager-web/src/constants/RouterConstants.ts&#10;start&#9;FILE&#9;file://E:/newspace/2019/dataManager-web/node_modules/react-scripts-ts/scripts/start.js&#10;start.js&#9;FILE&#9;file://E:/newspace/2019/dataManager-web/node_modules/react-scripts-ts/scripts/start.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../typesafe-actions-todo-app-bak" />
@@ -313,11 +475,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\newspace\2019\dataManager-web\src\components\dataSource\form\metadata" />
       <recent name="E:\newspace\2019\dataManager-web\src\components\dataSource\dialog\metadata" />
       <recent name="E:\newspace\2019\dataManager-web\src\components\exploit\left" />
       <recent name="E:\newspace\2019\dataManager-web\src\components" />
       <recent name="E:\newspace\2019\dataManager-web\src\reducers" />
-      <recent name="E:\newspace\2019\dataManager-web\src\selectots" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\newspace\2019\dataManager-web\src\models" />
@@ -356,7 +518,7 @@
       <workItem from="1545011417993" duration="7179000" />
       <workItem from="1545034319779" duration="618000" />
       <workItem from="1545035356203" duration="8664000" />
-      <workItem from="1545614943314" duration="2301000" />
+      <workItem from="1545614943314" duration="23876000" />
     </task>
     <task id="LOCAL-00001" summary="reduce改造">
       <created>1543394021704</created>
@@ -456,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545386683026</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="大数据资源">
+      <created>1545617391718</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545617391718</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342802000" />
+    <option name="totallyTimeSpent" value="364377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,29 +642,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20758928" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49925596" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3295082" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2061012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20758928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -514,7 +663,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -529,97 +678,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="大数据资源" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/selectots/ExploitSelectors.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ExploitActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selectots/DataSourceSelectors.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/dataSource.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/DataSourceActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/exploit.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/icons/lib/esm/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/icons/src/iconName.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/core/lib/esm/common/props.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/dialog/WorkFlowDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/left/LeftMenu.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/exploit/center/MainBoard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" column="6" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/DataSourceContainer.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,17 +758,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppSystemDialog.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -714,78 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/dataSource.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
-          <caret line="160" column="7" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/MetadataAppSystemForm.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5149">
-          <caret line="274" column="26" selection-start-line="274" selection-start-column="26" selection-end-line="274" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/MetadataMachineForm.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
-          <caret line="113" column="60" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/exploit/left/LeftMain.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2223">
           <caret line="123" column="90" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1786">
-          <caret line="97" column="48" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -802,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/DataSourceConstants.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/antd/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -819,9 +802,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dev-utils/openBrowser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-app-rewired/scripts/start.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/config/webpack.config.prod.js">
@@ -851,24 +831,253 @@
     <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/layout/Sider.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-app-rewired/scripts/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config-overrides.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+        <state relative-caret-position="19">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/scripts/start.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/dataSource.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="152">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/RouterConstants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/DataSourceConstants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SqlServerForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1591">
+          <caret line="118" column="10" lean-forward="true" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/PostgreSqlForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="77" column="49" selection-end-line="121" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/OracleForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="83" column="43" selection-end-line="139" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/GbaseForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HBaseForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/ZookeeperForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="983">
+          <caret line="77" column="37" lean-forward="true" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/HanaForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/MysqlForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="71" column="26" selection-end-line="121" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/AliyunForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1240">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/databaseForms/SolrForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataMachineForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4674">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataSourceForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1781">
+          <caret line="124" column="39" lean-forward="true" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/form/metadata/MetadataAppSystemForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="289" column="121" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataSource.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/DataSourceDialog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/AppCheckDialog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataAppSystem.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/center/submodule/MetadataMachine.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dataSource/dialog/metadata/MachineCheckDialog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="61" column="143" selection-start-line="61" selection-start-column="143" selection-end-line="61" selection-end-column="143" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

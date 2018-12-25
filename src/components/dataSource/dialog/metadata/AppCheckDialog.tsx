@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Modal, Button, notification, LocaleProvider } from 'antd';
-import MetadataMachine from '../../center/submodule/MetadataMachine';
+import MetadataAppSystem from '../../center/submodule/MetadataAppSystem';
 import zh_CN from '../../../../../node_modules/antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
 import '../../../../../node_modules/moment/locale/zh-cn';
@@ -16,10 +16,10 @@ const openNotificationWithIcon = (type: string) => {
     // @ts-ignore
     notification[type]({
         message: '错误信息',
-        description: '未选择服务器',
+        description: '未选择关联应用系统',
     });
 };
-class MetadataAppSystemDialog extends Component<propTypes, stateTypes> {
+class AppCheckDialog extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: []};
@@ -59,10 +59,10 @@ class MetadataAppSystemDialog extends Component<propTypes, stateTypes> {
                 ]}
             >
                 <LocaleProvider locale={zh_CN}>
-                    <MetadataMachine height={500} isAction={true} changeSelectedKeys={this.changeSelectedKeys} selectedRowKeys={selectedRowKeys}/>
+                    <MetadataAppSystem height={500} isAction={true} changeSelectedKeys={this.changeSelectedKeys} selectedRowKeys={selectedRowKeys}/>
                 </LocaleProvider>
             </Modal>
         );
     }
 }
-export default MetadataAppSystemDialog;
+export default AppCheckDialog;

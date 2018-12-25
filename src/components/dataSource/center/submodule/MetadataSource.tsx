@@ -42,30 +42,37 @@ class MetadataSource extends Component<propTypes, stateTypes> {
             title: '数据源名称',
             dataIndex: 'name',
             width: 250,
+            sort: true,
         }, {
             title: '数据源类型',
             dataIndex: 'sourceType',
             width: 150,
+            sort: true,
         }, {
             title: '主机IP',
             dataIndex: 'ip',
             width: 200,
+            sort: true,
         }, {
             title: '实例名',
             dataIndex: 'sid',
             width: 150,
+            sort: true,
         }, {
             title: '注册时间',
             dataIndex: 'createTime',
             width: 150,
+            sort: true,
         }, {
             title: '连接状态',
             dataIndex: 'status',
             width: 100,
+            sort: true,
         }, {
             title: '操作',
             dataIndex: 'action',
             width: 250,
+            sort: true,
         }];
         const data = [{
             key: '1',

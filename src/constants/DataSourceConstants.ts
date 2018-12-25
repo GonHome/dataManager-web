@@ -1,6 +1,16 @@
 import MetadataMachine from '../components/dataSource/center/submodule/MetadataMachine';
 import MetadataAppSystem from '../components/dataSource/center/submodule/MetadataAppSystem';
 import MetadataSource from '../components/dataSource/center/submodule/MetadataSource';
+import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
+import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
+import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
+import HBaseForm from '../components/dataSource/form/metadata/databaseForms/HBaseForm';
+import MysqlForm from '../components/dataSource/form/metadata/databaseForms/MysqlForm';
+import OracleForm from '../components/dataSource/form/metadata/databaseForms/OracleForm';
+import PostgreSqlForm from '../components/dataSource/form/metadata/databaseForms/PostgreSqlForm';
+import SolrForm from '../components/dataSource/form/metadata/databaseForms/SolrForm';
+import SqlServerForm from '../components/dataSource/form/metadata/databaseForms/SqlServerForm';
+import ZookeeperForm from '../components/dataSource/form/metadata/databaseForms/ZookeeperForm';
 export const LEFT_MENUS = [
     {name: '元数据管理', path: 'metadata', component: null, children: [
             {name: '服务器注册管理', path: 'metadata/machine', component: MetadataMachine, children: []},
@@ -45,4 +55,15 @@ export const LEFT_MENUS = [
             {name: '数据元管理', path: 'system/dataElement', component: null, children: []},
         ]},
     ];
-export const sourceTypes = ['SQLServer', 'HBase', 'Oracle', 'Mysql', 'PostgreSql', 'Hana', 'Gbase', 'Solr', 'ZooKeeper', '阿里云OSS'];
+export const sourceTypes = [
+        {name: 'SQLServer', form: SqlServerForm},
+        {name: 'HBase', form: HBaseForm},
+        {name: 'Oracle', form: OracleForm},
+        {name: 'Mysql', form: MysqlForm},
+        {name: 'PostgreSql', form: PostgreSqlForm},
+        {name: 'Hana', form: HanaForm},
+        {name: 'Gbase', form: GbaseForm},
+        {name: 'Solr', form: SolrForm},
+        {name: 'ZooKeeper', form: ZookeeperForm},
+        {name: '阿里云OSS', form: AliyunForm},
+    ];

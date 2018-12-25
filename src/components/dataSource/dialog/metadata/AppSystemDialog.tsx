@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import MetadataAppSystemForm from '../../form/MetadataAppSystemForm';
+import MetadataAppSystemForm from '../../form/metadata/MetadataAppSystemForm';
 type propTypes = {
     details: any;
     isEditable: boolean;

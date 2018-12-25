@@ -7,6 +7,7 @@ type propTypes = {
     height: number;
     isAction: boolean;
     changeSelectedKeys: (selectedRowKeys: string[]) => void;
+    selectedRowKeys: string[];
 };
 type stateTypes = {
     selectedRowKeys: string[];
@@ -19,6 +20,13 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
+    }
+
+    componentDidMount() {
+        const {isAction, selectedRowKeys} = this.props;
+        if (isAction) {
+            this.setState({selectedRowKeys});
+        }
     }
 
     onSelectChange = (selectedRowKeys: string[]) => {

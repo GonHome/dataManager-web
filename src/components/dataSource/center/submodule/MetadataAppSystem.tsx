@@ -5,6 +5,9 @@ import AppSystemDialog from '../../dialog/metadata/AppSystemDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
+    isAction: boolean;
+    changeSelectedKeys: (selectedRowKeys: string[]) => void;
+    selectedRowKeys: string[];
 };
 type stateTypes = {
     selectedRowKeys: string[];
@@ -19,6 +22,13 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
     }
 
+    componentDidMount() {
+        const {isAction, selectedRowKeys} = this.props;
+        if (isAction) {
+            this.setState({selectedRowKeys});
+        }
+    }
+
     onSelectChange = (selectedRowKeys: string[]) => {
         this.setState({selectedRowKeys});
     };
@@ -28,7 +38,7 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
     };
 
     render() {
-        const {height} = this.props;
+        const {height, isAction} = this.props;
         const {selectedRowKeys, isDialog, details, isEditable, title} = this.state;
         const rowSelection = {selectedRowKeys, onChange: this.onSelectChange};
         const lockButton = (
@@ -78,7 +88,7 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
                         <TreeNode title="未分类" key="1" />
                     </Tree>
                 </div>
-                <div className={'right-board'} style={{height: height - 40}}>
+                <div className={'right-board'} style={isAction ? {height: height - 22 } : {height: height - 40}}>
                     <div className={'back-white'}>
                         <div className={'action-bar'}>
                             <div  className={'input-bar'}>
@@ -89,7 +99,7 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
                                     type={'text'}
                                 />
                             </div>
-                            <ButtonGroup className={'button-bar'}>
+                            <ButtonGroup className={'button-bar'} style={isAction ? {display: 'none'} : {display: 'block'}}>
                                 <Button intent={Intent.PRIMARY} text={'注册'} small={true} onClick={() => this.changeDialog(true, null, true, '注册')}/>&nbsp;
                                 <Button intent={Intent.PRIMARY} text={'删除'} small={true}/>&nbsp;
                             </ButtonGroup>
