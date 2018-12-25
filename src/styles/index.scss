@@ -5,6 +5,7 @@
 }
 
 .small-modal{
+  font-size: 12px;
   .ant-modal-close-x{
     width: 39px;
     height: 39px;
@@ -44,6 +45,12 @@
   .ant-input{
     font-size: 12px;
   }
+  .input-bar-action{
+    width: 300px;
+    position: absolute;
+    right: 10px;
+    margin-top: 6px;
+  }
   .christmas.ant-btn-primary:before{
     display: contents;
   }
@@ -65,6 +72,18 @@
   }
   .source-type:hover{
     background-color:#d7e1e6;
+  }
+  .ant-table-small > .ant-table-content > .ant-table-body{
+    margin: 0;
+  }
+  .ant-table-thead > tr > th{
+    background-color: #EEF1F5;
+  }
+  .table{
+    height: calc(100% - 27px);
+  }
+  .page{
+    float: right;
   }
 }
 

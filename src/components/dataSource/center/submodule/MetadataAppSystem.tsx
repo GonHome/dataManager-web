@@ -64,11 +64,14 @@ class MetadataAppSystem extends Component<propTypes, stateTypes> {
             title: '应用系统访问地址',
             dataIndex: 'visitUrl',
             width: '20%',
-        }, {
-            title: '操作',
-            dataIndex: 'action',
-            width: '20%',
         }];
+        if (isAction) {
+            columns.map((column) => {
+                column.width = '25%';
+            });
+        } else {
+            columns.push({title: '操作', dataIndex: 'action', width: '20%'});
+        }
         const data = [{
             key: '1',
             name: '测试',

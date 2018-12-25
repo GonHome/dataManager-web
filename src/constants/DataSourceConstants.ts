@@ -1,6 +1,7 @@
 import MetadataMachine from '../components/dataSource/center/submodule/MetadataMachine';
 import MetadataAppSystem from '../components/dataSource/center/submodule/MetadataAppSystem';
 import MetadataSource from '../components/dataSource/center/submodule/MetadataSource';
+import MetadataDataObject from '../components/dataSource/center/submodule/MetadataDataObject';
 import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
 import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
 import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
@@ -16,7 +17,7 @@ export const LEFT_MENUS = [
             {name: '服务器注册管理', path: 'metadata/machine', component: MetadataMachine, children: []},
             {name: '应用系统注册管理', path: 'metadata/appSystem', component: MetadataAppSystem, children: []},
             {name: '数据源注册管理', path: 'metadata/dataSource', component: MetadataSource, children: []},
-            {name: '数据对象注册管理', path: 'metadata/dataObject', component: null, children: []},
+            {name: '数据对象注册管理', path: 'metadata/dataObject', component: MetadataDataObject, children: []},
             {name: '信息代码注册管理', path: 'metadata/infoCode', component: null, children: []},
             {name: '数据规范', path: 'metadata/dataStandard', component: null, children: []},
             {name: '数据资源', path: 'metadata/dataSources', component: null, children: []},
