@@ -7,6 +7,7 @@ const FormItem = Form.Item;
 const Option = Select.Option;
 type propTypes = {
     form: any;
+    width: number;
     DatabaseForm: any;
 };
 type stateTypes = {
@@ -27,7 +28,7 @@ const formItemLayoutInput = {
         },
     },
 };
-class MetadataSourceForm extends Component<propTypes, stateTypes> {
+class SourceForm extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedServerRowKeys: [], isServerDialog: false, selectedAppRowKeys: [], isAppDialog: false};
@@ -40,7 +41,7 @@ class MetadataSourceForm extends Component<propTypes, stateTypes> {
     };
     render() {
         const {getFieldDecorator} = this.props.form;
-        const {DatabaseForm} = this.props;
+        const {DatabaseForm, width} = this.props;
         const {isServerDialog, selectedServerRowKeys, isAppDialog, selectedAppRowKeys} = this.state;
         return (
             <div>
@@ -50,7 +51,7 @@ class MetadataSourceForm extends Component<propTypes, stateTypes> {
                         连接设置:
                         <DatabaseForm getFieldDecorator={getFieldDecorator} />
                         分类设置:
-                        <div className={'basis'} style={{height: 48}}>
+                        <div className={'basis'} style={{height: 48, overflowY: 'hidden'}}>
                             <Row gutter={24}>
                                 <Col span={12}>
                                     <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'网络分类'} >
@@ -91,7 +92,7 @@ class MetadataSourceForm extends Component<propTypes, stateTypes> {
                             </Row>
                         </div>
                         关联信息:
-                        <div className={'basis'} style={{height: 48}} >
+                        <div className={'basis'} style={{height: 48, overflowY: 'hidden'}} >
                             <Row gutter={24}>
                                 <Col span={12}>
                                     <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'关联服务器信息'} >
@@ -121,10 +122,10 @@ class MetadataSourceForm extends Component<propTypes, stateTypes> {
                         </div>
                     </div>
                 </Form>
-                {isServerDialog ? <MetadataMachineCheckDialog selectedRowKeys={selectedServerRowKeys} changeDialog={this.changeServerDialog}/> : null}
-                {isAppDialog ? <AppCheckDialog selectedRowKeys={selectedAppRowKeys} changeDialog={this.changeAppDialog}/> : null}
+                {isServerDialog ? <MetadataMachineCheckDialog width={width} selectedRowKeys={selectedServerRowKeys} changeDialog={this.changeServerDialog}/> : null}
+                {isAppDialog ? <AppCheckDialog width={width} selectedRowKeys={selectedAppRowKeys} changeDialog={this.changeAppDialog}/> : null}
             </div>
         );
     }
 }
-export default MetadataSourceForm;
+export default SourceForm;

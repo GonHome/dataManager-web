@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import AppSystemForm from '../../form/metadata/AppSystemForm';
+import DataStandardForm from '../../form/metadata/DataStandardForm';
 type propTypes = {
     details: any;
     width: number;
@@ -8,7 +8,7 @@ type propTypes = {
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
 };
-class AppSystemDialog extends Component<propTypes> {
+class DataStandardDialog extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -18,25 +18,25 @@ class AppSystemDialog extends Component<propTypes> {
     };
     render() {
         const {title, width} = this.props;
-        const WrappedForm = Form.create()(AppSystemForm);
+        const WrappedForm = Form.create()(DataStandardForm);
         return (
             <Modal
                 className={'small-modal'}
                 maskClosable={false}
                 visible={true}
                 title={title}
-                width={width - 420}
+                width={width - 100}
                 style={{top: 20}}
                 bodyStyle={{padding: 12}}
                 onCancel={this.onClose}
                 footer={[
-                    <Button size={'small'} key="submit" type="primary" >保存</Button>,
+                    <Button size={'small'} key="submit" type="primary" >确定</Button>,
                     <Button size={'small'} key="back" onClick={this.onClose} >取消</Button>,
                 ]}
             >
-                <WrappedForm width={width}/>
+                <WrappedForm />
             </Modal>
         );
     }
 }
-export default AppSystemDialog;
+export default DataStandardDialog;

@@ -49,7 +49,7 @@ const formItemLayoutTextArea = {
         },
     },
 };
-class MetadataMachineForm extends Component<propTypes, stateTypes> {
+class MachineForm extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -286,4 +286,4 @@ class MetadataMachineForm extends Component<propTypes, stateTypes> {
         );
     }
 }
-export default MetadataMachineForm;
+export default MachineForm;

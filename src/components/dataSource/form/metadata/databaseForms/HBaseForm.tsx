@@ -25,7 +25,7 @@ class HBaseForm extends Component<propTypes> {
     render() {
         const {getFieldDecorator} = this.props;
         return (
-            <div className={'basis'} style={{height: 130}}>
+            <div className={'basis'} style={{height: 135}}>
                 <Row gutter={24}>
                     <Col span={12}>
                         <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'版本'} >

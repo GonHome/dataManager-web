@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
 
-import MetadataObjectForm from '../../form/metadata/MetadataObjectForm';
+import ObjectForm from '../../form/metadata/ObjectForm';
 type propTypes = {
     details: any;
+    width: number;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
@@ -17,15 +18,15 @@ class DataObjectDialog extends Component<propTypes> {
         changeDialog(false, null, true, '');
     };
     render() {
-        const {title} = this.props;
-        const WrappedForm = Form.create()(MetadataObjectForm);
+        const {title, width} = this.props;
+        const WrappedForm = Form.create()(ObjectForm);
         return (
             <Modal
                 className={'small-modal'}
                 maskClosable={false}
                 visible={true}
                 title={title}
-                width={950}
+                width={width - 420}
                 style={{top: 20}}
                 bodyStyle={{padding: 8}}
                 onCancel={this.onClose}

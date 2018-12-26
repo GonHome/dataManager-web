@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form} from 'antd';
-import MetadataMachineForm from '../../form/metadata/MetadataMachineForm';
+import MachineForm from '../../form/metadata/MachineForm';
 type propTypes = {
     details: any;
+    width: number;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
@@ -16,15 +17,15 @@ class MachineDialog extends Component<propTypes> {
       changeDialog(false, null, true, '');
     };
     render() {
-        const {title} = this.props;
-        const WrappedForm = Form.create()(MetadataMachineForm);
+        const {title, width} = this.props;
+        const WrappedForm = Form.create()(MachineForm);
         return (
             <Modal
                 className={'small-modal'}
                 maskClosable={false}
                 visible={true}
                 title={title}
-                width={950}
+                width={width - 420}
                 style={{top: 20}}
                 onCancel={this.onClose}
                 footer={[

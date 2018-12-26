@@ -22,9 +22,9 @@ class MainBoard extends Component<propTypes> {
     }
     // @ts-ignore
     showModule = (SubModule: any) => {
-        const {height} = this.props;
+        const {height, width} = this.props;
         if (SubModule) {
-            return  <LocaleProvider locale={zh_CN}><SubModule {...{height}} /></LocaleProvider>;
+            return  <LocaleProvider locale={zh_CN}><SubModule {...{height, width}} /></LocaleProvider>;
         } else {
             return <span>路径有误</span>;
         }

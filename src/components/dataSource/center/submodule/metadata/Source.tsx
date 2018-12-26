@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Tree, Table, Pagination } from 'antd';
 import {InputGroup, Button, Intent, ButtonGroup} from '@blueprintjs/core';
-import DataSourceDialog from '../../dialog/metadata/DataSourceDialog';
+import DataSourceDialog from '../../../dialog/metadata/DataSourceDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
+    width: number;
 };
 type stateTypes = {
     selectedRowKeys: string[];
@@ -13,7 +14,7 @@ type stateTypes = {
     isEditable: boolean;
     title: string;
 };
-class MetadataSource extends Component<propTypes, stateTypes> {
+class Source extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
@@ -28,7 +29,7 @@ class MetadataSource extends Component<propTypes, stateTypes> {
     };
 
     render() {
-        const {height} = this.props;
+        const {height, width} = this.props;
         const {selectedRowKeys, isDialog, details, isEditable, title} = this.state;
         const rowSelection = {selectedRowKeys, onChange: this.onSelectChange};
         const lockButton = (
@@ -114,11 +115,11 @@ class MetadataSource extends Component<propTypes, stateTypes> {
                         </div>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} scroll={{x: 1250}} />
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <DataSourceDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
+                        {isDialog ? <DataSourceDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
                     </div>
                 </div>
             </div>
         );
     }
 }
-export default MetadataSource;
+export default Source;

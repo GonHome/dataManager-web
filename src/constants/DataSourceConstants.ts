@@ -1,7 +1,10 @@
-import MetadataMachine from '../components/dataSource/center/submodule/MetadataMachine';
-import MetadataAppSystem from '../components/dataSource/center/submodule/MetadataAppSystem';
-import MetadataSource from '../components/dataSource/center/submodule/MetadataSource';
-import MetadataDataObject from '../components/dataSource/center/submodule/MetadataDataObject';
+import Machine from '../components/dataSource/center/submodule/metadata/Machine';
+import AppSystem from '../components/dataSource/center/submodule/metadata/AppSystem';
+import Source from '../components/dataSource/center/submodule/metadata/Source';
+import DataObject from '../components/dataSource/center/submodule/metadata/DataObject';
+import InfoCode from '../components/dataSource/center/submodule/metadata/InfoCode';
+import DataStandard from '../components/dataSource/center/submodule/metadata/DataStandard';
+import Resources from '../components/dataSource/center/submodule/metadata/Resources';
 import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
 import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
 import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
@@ -14,13 +17,13 @@ import SqlServerForm from '../components/dataSource/form/metadata/databaseForms/
 import ZookeeperForm from '../components/dataSource/form/metadata/databaseForms/ZookeeperForm';
 export const LEFT_MENUS = [
     {name: '元数据管理', path: 'metadata', component: null, children: [
-            {name: '服务器注册管理', path: 'metadata/machine', component: MetadataMachine, children: []},
-            {name: '应用系统注册管理', path: 'metadata/appSystem', component: MetadataAppSystem, children: []},
-            {name: '数据源注册管理', path: 'metadata/dataSource', component: MetadataSource, children: []},
-            {name: '数据对象注册管理', path: 'metadata/dataObject', component: MetadataDataObject, children: []},
-            {name: '信息代码注册管理', path: 'metadata/infoCode', component: null, children: []},
-            {name: '数据规范', path: 'metadata/dataStandard', component: null, children: []},
-            {name: '数据资源', path: 'metadata/dataSources', component: null, children: []},
+            {name: '服务器注册管理', path: 'metadata/machine', component: Machine, children: []},
+            {name: '应用系统注册管理', path: 'metadata/appSystem', component: AppSystem, children: []},
+            {name: '数据源注册管理', path: 'metadata/dataSource', component: Source, children: []},
+            {name: '数据对象注册管理', path: 'metadata/dataObject', component: DataObject, children: []},
+            {name: '信息代码注册管理', path: 'metadata/infoCode', component: InfoCode, children: []},
+            {name: '数据规范', path: 'metadata/dataStandard', component: DataStandard, children: []},
+            {name: '数据资源', path: 'metadata/dataResources', component: Resources, children: []},
         ]},
     {name: '数据标准化管理', path: 'standard', component: null, children: [
             {name: '数据对标', path: 'standard/benchmarking', component: null, children: []},

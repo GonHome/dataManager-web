@@ -1,34 +1,18 @@
 import React, { Component } from 'react';
-import { Form, Row, Col, Input, Select} from 'antd';
+import { Form, Row, Col, Input, Select, DatePicker } from 'antd';
 import {Icon} from '@blueprintjs/core';
 import MetadataMachineCheckDialog from '../../dialog/metadata/MachineCheckDialog';
 const FormItem = Form.Item;
 const Option = Select.Option;
 type propTypes = {
     form: any;
+    width: number;
 };
 type stateTypes = {
     selectedRowKeys: string[];
     isDialog: boolean;
-    // appSystemName: string;
-    // isUsed: number;
-    // onlineDate: string;
-    // offlineDate: string;
-    // databaseType: string;
-    // visitUrl: string;
-    // appRemarks: string;
-    // databaseRemarks: string;
-    // authority: string;
-    // authorityPhone: string;
-    // authorityUser: number;
-    // build: string;
-    // buildPhone: number;
-    // buildUser: number;
-    // register: number;
-    // registerPhone: string;
-    // registerUser: string;
-    // jobType: string;
-    // businessType: string;
+    onlineDate: any;
+    offlineDate: any;
 };
 const formItemLayoutInput = {
     labelCol: {
@@ -54,17 +38,42 @@ const formItemLayoutDiv = {
         },
     },
 };
-class MetadataAppSystemForm extends Component<propTypes, stateTypes> {
+class AppSystemForm extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
-        this.state = {selectedRowKeys: [], isDialog: false};
+        this.state = {selectedRowKeys: [], isDialog: false, onlineDate: null, offlineDate: null};
     }
+    disabledStartDate = (onlineDate: any) => {
+        const offlineDate = this.state.offlineDate;
+        if (!onlineDate || !offlineDate) {
+            return false;
+        }
+        return onlineDate.valueOf() > offlineDate.valueOf();
+    };
+    disabledEndDate = (offlineDate: any) => {
+        const onlineDate = this.state.onlineDate;
+        if (!offlineDate || !onlineDate) {
+            return false;
+        }
+        return offlineDate.valueOf() <= onlineDate.valueOf();
+    };
+    onChange = (field: string, value: any) => {
+        // @ts-ignore
+        this.setState({[field]: value});
+    };
+    onStartChange = (value: any) => {
+        this.onChange('onlineDate', value);
+    };
+    onEndChange = (value: any) => {
+        this.onChange('offlineDate', value);
+    };
     changeDialog = (isDialog: boolean) => {
         this.setState({isDialog});
     };
     render() {
         const {getFieldDecorator} = this.props.form;
-        const {selectedRowKeys, isDialog} = this.state;
+        const {width} = this.props;
+        const {selectedRowKeys, isDialog, onlineDate, offlineDate} = this.state;
         return (
             <div>
                 <Form>
@@ -106,12 +115,34 @@ class MetadataAppSystemForm extends Component<propTypes, stateTypes> {
                             </Col>
                             <Col span={12}>
                                 <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'上线时间'} >
-                                    {getFieldDecorator('onlineDate', {})(<Input size={'small'} placeholder={'例如:00-00-00-00-00'}  />)}
+                                    {getFieldDecorator('onlineDate', {})(
+                                        <DatePicker
+                                            disabledDate={this.disabledStartDate}
+                                            showTime={true}
+                                            style={{width: '100%'}}
+                                            size={'small'}
+                                            format="YYYY-MM-DD HH:mm:ss"
+                                            value={onlineDate}
+                                            placeholder="请选择上线时间"
+                                            onChange={this.onStartChange}
+                                        />
+                                    )}
                                 </FormItem>
                             </Col>
                             <Col span={12}>
                                 <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'下线时间'} >
-                                    {getFieldDecorator('offlineDate', {})(<Input size={'small'} placeholder={'例如:00-00-00-00-00'}  />)}
+                                    {getFieldDecorator('offlineDate', {})(
+                                        <DatePicker
+                                            disabledDate={this.disabledEndDate}
+                                            showTime={true}
+                                            style={{width: '100%'}}
+                                            size={'small'}
+                                            format="YYYY-MM-DD HH:mm:ss"
+                                            value={offlineDate}
+                                            placeholder="请选择下线时间"
+                                            onChange={this.onEndChange}
+                                        />
+                                    )}
                                 </FormItem>
                             </Col>
                             <Col span={12}>
@@ -228,7 +259,7 @@ class MetadataAppSystemForm extends Component<propTypes, stateTypes> {
                         </Row>
                     </div>
                     分类信息配置:
-                    <div className={'basis'} style={{height: 48}} >
+                    <div className={'basis'} style={{height: 48, overflowY: 'hidden'}} >
                         <Row gutter={24}>
                             <Col span={12}>
                                 <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'行业类别'} >
@@ -274,7 +305,7 @@ class MetadataAppSystemForm extends Component<propTypes, stateTypes> {
                         </Row>
                     </div>
                     配置信息:
-                    <div className={'basis'} style={{height: 48}} >
+                    <div className={'basis'} style={{height: 48, overflowY: 'hidden'}} >
                         <FormItem style={{marginBottom: 0}} {...formItemLayoutDiv} label={'部署服务器'} >
                             {getFieldDecorator('servers', {
                                 rules: [
@@ -287,10 +318,10 @@ class MetadataAppSystemForm extends Component<propTypes, stateTypes> {
                         </FormItem>
                     </div>
                 </Form>
-                {isDialog ? <MetadataMachineCheckDialog {...{selectedRowKeys}} changeDialog={this.changeDialog}/> : null}
+                {isDialog ? <MetadataMachineCheckDialog {...{selectedRowKeys, width}} changeDialog={this.changeDialog}/> : null}
             </div>
 
         );
     }
 }
-export default MetadataAppSystemForm;
+export default AppSystemForm;

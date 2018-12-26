@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Modal, Button, Form, Row, Col} from 'antd';
-import MetadataSourceForm from '../../form/metadata/MetadataSourceForm';
+import SourceForm from '../../form/metadata/SourceForm';
 import {sourceTypes} from '../../../../constants/DataSourceConstants';
 type propTypes = {
     details: any;
+    width: number;
     isEditable: boolean;
     changeDialog: (isRegister: boolean, details: any, isEditable: boolean, title: string) => void;
     title: string;
@@ -21,9 +22,9 @@ class DataSourceDialog extends Component<propTypes, stateType> {
         changeDialog(false, null, true, '');
     };
     render() {
-        const {title} = this.props;
+        const {title, width} = this.props;
         const {checkedSource} = this.state;
-        const WrappedForm = Form.create()(MetadataSourceForm);
+        const WrappedForm = Form.create()(SourceForm);
         let checkedIndex = -1;
         let DatabaseForm = null;
         sourceTypes.map((item, index) => {
@@ -38,7 +39,7 @@ class DataSourceDialog extends Component<propTypes, stateType> {
                 maskClosable={false}
                 visible={true}
                 title={title}
-                width={950}
+                width={width - 420}
                 style={{top: 20}}
                 bodyStyle={{padding: 12}}
                 onCancel={this.onClose}
@@ -49,8 +50,8 @@ class DataSourceDialog extends Component<propTypes, stateType> {
             >
                 <Row gutter={24}>
                     <Col span={5}>
-                        <div style={{color: '#00b5ff'}}>数据源类型:</div>
-                        <div style={{height: 400, border: '1px solid #b1becc', padding: 10}}>
+                        <div className={'title-source'}>数据源类型:</div>
+                        <div className={'sources'}>
                             {checkedIndex > -1 ? <div className={'check-source'} style={{marginTop: checkedIndex * 20}} /> : null}
                             {sourceTypes.map((item, index) => {
                                 return <div style={{marginTop: index * 20}} onClick={() => this.setState({checkedSource: item.name})} className={'source-type'} key={item.name}>{item.name}</div>;
@@ -58,7 +59,7 @@ class DataSourceDialog extends Component<propTypes, stateType> {
                         </div>
                     </Col>
                     <Col span={19}>
-                        <WrappedForm DatabaseForm={DatabaseForm} />
+                        <WrappedForm DatabaseForm={DatabaseForm} width={width}/>
                     </Col>
                 </Row>
 

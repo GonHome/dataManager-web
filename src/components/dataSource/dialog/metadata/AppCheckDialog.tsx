@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Modal, Button, notification, LocaleProvider } from 'antd';
-import MetadataAppSystem from '../../center/submodule/MetadataAppSystem';
+// @ts-ignore
+import AppSystem from '../../center/submodule/metadata/AppSystem';
 import zh_CN from '../../../../../node_modules/antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
 import '../../../../../node_modules/moment/locale/zh-cn';
 moment.locale('zh-cn');
 type propTypes = {
     selectedRowKeys: string[];
+    width: number;
     changeDialog: (isDialog: boolean) => void;
 };
 type stateTypes = {
@@ -42,14 +44,14 @@ class AppCheckDialog extends Component<propTypes, stateTypes> {
         }
     };
     render() {
-        const {selectedRowKeys} = this.props;
+        const {selectedRowKeys, width} = this.props;
         return (
             <Modal
                 className={'small-modal'}
                 maskClosable={false}
                 visible={true}
                 title={'服务器选择'}
-                width={950}
+                width={width - 420}
                 style={{top: 20}}
                 bodyStyle={{padding: 6, height: 480}}
                 onCancel={this.onClose}
@@ -59,7 +61,7 @@ class AppCheckDialog extends Component<propTypes, stateTypes> {
                 ]}
             >
                 <LocaleProvider locale={zh_CN}>
-                    <MetadataAppSystem height={500} isAction={true} changeSelectedKeys={this.changeSelectedKeys} selectedRowKeys={selectedRowKeys}/>
+                    <AppSystem height={500} width={width} isAction={true} changeSelectedKeys={this.changeSelectedKeys} selectedRowKeys={selectedRowKeys}/>
                 </LocaleProvider>
             </Modal>
         );

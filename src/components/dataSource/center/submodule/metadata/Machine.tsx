@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Tree, Table, Pagination } from 'antd';
 import {InputGroup, Button, Intent, ButtonGroup} from '@blueprintjs/core';
-import MachineDialog from '../../dialog/metadata/MachineDialog';
+import MachineDialog from '../../../dialog/metadata/MachineDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
+    width: number;
     isAction: boolean;
     changeSelectedKeys: (selectedRowKeys: string[]) => void;
     selectedRowKeys: string[];
@@ -16,7 +17,7 @@ type stateTypes = {
     isEditable: boolean;
     title: string;
 };
-class MetadataMachine extends Component<propTypes, stateTypes> {
+class Machine extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
@@ -42,7 +43,7 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
     };
 
     render() {
-        const {height, isAction} = this.props;
+        const {height, isAction, width} = this.props;
         const {selectedRowKeys, isDialog, details, isEditable, title} = this.state;
         const rowSelection = {selectedRowKeys, onChange: this.onSelectChange};
         const lockButton = (
@@ -128,11 +129,11 @@ class MetadataMachine extends Component<propTypes, stateTypes> {
                         </div>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} />
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <MachineDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
+                        {isDialog ? <MachineDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
                     </div>
                 </div>
             </div>
         );
     }
 }
-export default MetadataMachine;
+export default Machine;

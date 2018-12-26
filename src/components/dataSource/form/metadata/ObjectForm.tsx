@@ -69,7 +69,7 @@ const data = [{
     username: 'root',
 }];
 
-class MetadataObjectForm extends Component<propTypes, stateTypes> {
+class ObjectForm extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -132,17 +132,17 @@ class MetadataObjectForm extends Component<propTypes, stateTypes> {
                         <InputGroup placeholder="请输入数据对象名" rightElement={lockButton} small={true} type={'text'}/>
                     </div>
                 </Row>
-                <div className={'basis'} style={{height: 380}}>
+                <div className={'basis'} style={{height: 380, overflowY: 'hidden'}}>
                     {/*<div style={{width: 'calc(100% - 280px)', height: '100%', display: 'inline-block', textAlign: 'center', marginTop: 130}}>*/}
                         {/*请选择上方的数据源配置*/}
                     {/*</div>*/}
-                    <div style={{width: 'calc(100% - 280px)', height: '100%', display: 'inline-block', paddingRight: 5}}>
+                    <div className={'object-table'}>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} />
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
                     </div>
-                    <div style={{width: 280, height: '100%', float: 'right', border: '1px solid #b1becc'}}>
-                        <div style={{height: 24, lineHeight: '24px', backgroundColor: '#e5e9ea', fontWeight: 'bold', color: 'black', paddingLeft: 10}}>资源分类</div>
-                        <div style={{height: 'calc(100% - 24px)', overflowY: 'auto'}}>
+                    <div className={'object-source'}>
+                        <div className={'source-title'}>资源分类</div>
+                        <div className={'source-form'}>
                             <FormItem style={{marginBottom: 0}} {...formItemLayoutInput} label={'行业分类'} >
                                 {getFieldDecorator('jobType', {
                                     rules: [
@@ -293,4 +293,4 @@ class MetadataObjectForm extends Component<propTypes, stateTypes> {
         );
     }
 }
-export default MetadataObjectForm;
+export default ObjectForm;

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Tree, Table, Pagination } from 'antd';
 import {InputGroup, Button, Intent, ButtonGroup} from '@blueprintjs/core';
-import DataObjectDialog from '../../dialog/metadata/DataObjectDialog';
+import DataObjectDialog from '../../../dialog/metadata/DataObjectDialog';
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
+    width: number;
     isAction: boolean;
     changeSelectedKeys: (selectedRowKeys: string[]) => void;
     selectedRowKeys: string[];
@@ -16,7 +17,7 @@ type stateTypes = {
     isEditable: boolean;
     title: string;
 };
-class MetadataDataObject extends Component<propTypes, stateTypes> {
+class DataObject extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {selectedRowKeys: [], isDialog: false, details: null, isEditable: true, title: ''};
@@ -42,7 +43,7 @@ class MetadataDataObject extends Component<propTypes, stateTypes> {
     };
 
     render() {
-        const {height, isAction} = this.props;
+        const {height, isAction, width} = this.props;
         const {selectedRowKeys, isDialog, details, isEditable, title} = this.state;
         const rowSelection = {selectedRowKeys, onChange: this.onSelectChange};
         const lockButton = (
@@ -139,11 +140,11 @@ class MetadataDataObject extends Component<propTypes, stateTypes> {
                         </div>
                         <Table className={'table'} pagination={false} rowSelection={rowSelection} columns={columns} dataSource={data} size="small" bordered={true} scroll={isAction ? {x: 1150} : {x: 1400}}/>
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <DataObjectDialog {...{details, isEditable, title}} changeDialog={this.changeDialog} /> : null}
+                        {isDialog ? <DataObjectDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
                     </div>
                 </div>
             </div>
         );
     }
 }
-export default MetadataDataObject;
+export default DataObject;
