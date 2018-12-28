@@ -5,6 +5,10 @@ import DataObject from '../components/dataSource/center/submodule/metadata/DataO
 import InfoCode from '../components/dataSource/center/submodule/metadata/InfoCode';
 import DataStandard from '../components/dataSource/center/submodule/metadata/DataStandard';
 import Resources from '../components/dataSource/center/submodule/metadata/Resources';
+import Benchmarke from '../components/dataSource/center/submodule/standard/Benchmarke';
+import Metadata from '../components/dataSource/center/submodule/standard/Metadata';
+import DatabaseInfo from '../components/dataSource/center/submodule/standard/DatabaseInfo';
+import Local from '../components/dataSource/center/submodule/catalogue/Local';
 import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
 import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
 import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
@@ -26,13 +30,13 @@ export const LEFT_MENUS = [
             {name: '数据资源', path: 'metadata/dataResources', component: Resources, children: []},
         ]},
     {name: '数据标准化管理', path: 'standard', component: null, children: [
-            {name: '数据对标', path: 'standard/benchmarking', component: null, children: []},
-            {name: '技术元目录', path: 'standard/metadata', component: null, children: []},
+            {name: '数据对标', path: 'standard/benchmarke', component: Benchmarke, children: []},
+            {name: '技术元目录', path: 'standard/metadata', component: Metadata, children: []},
             {name: '数据地图', path: 'standard/dataMap', component: null, children: []},
-            {name: '依标建库', path: 'standard/database', component: null, children: []},
+            {name: '依标建库', path: 'standard/database', component: DatabaseInfo, children: []},
         ]},
     {name: '数据编目管理', path: 'catalogue', component: null, children: [
-            {name: '本地数据目录', path: 'catalogue/local', component: null, children: []},
+            {name: '本地数据目录', path: 'catalogue/local', component: Local, children: []},
             {name: '数据编目上报', path: 'catalogue/report', component: null, children: []},
             {name: '数据申请', path: 'catalogue/apply', component: null, children: []},
         ]},

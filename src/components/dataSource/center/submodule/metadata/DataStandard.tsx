@@ -111,13 +111,13 @@ class DataStandard extends Component<propTypes, stateTypes> {
                 <div className={'right-board'} style={isAction ? {height} : {height: height - 40}}>
                     <div className={'back-white'}>
                         <div className={'action-bar'}>
-                            <Select size={'small'} style={{width: 100}} value={status} onChange={(e) => this.setState({status: e})}>
+                            <Select size={'small'} style={{width: 100, position: 'absolute', marginTop: 2}} value={status} onChange={(e) => this.setState({status: e})}>
                                 <Option value={'1'}>全部</Option>
                                 <Option value={'2'}>未映射</Option>
                                 <Option value={'3'}>已映射</Option>
                             </Select>
                             &nbsp;&nbsp;
-                            <div  className={'input-bar'}>
+                            <div  className={'input-bar'} style={{marginLeft: 110}}>
                                 <InputGroup
                                     placeholder="请输入数据规范名称"
                                     rightElement={lockButton}
