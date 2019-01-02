@@ -132,6 +132,8 @@ $active-blue-color:rgb(72,175,240);
           }
           .table{
             height: calc(100% - 50px);
+          }
+          .table-point{
             .ant-table-row{
               cursor: pointer;
             }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Tree, Table, Pagination } from 'antd';
+import { Tree, Table, Pagination, Select } from 'antd';
 import {InputGroup, Button, Intent , ButtonGroup} from '@blueprintjs/core';
 import LocalDialog from '../../../dialog/catalogue/LocalDialog';
+const Option = Select.Option;
 const { TreeNode } = Tree;
 type propTypes = {
     height: number;
@@ -16,7 +17,7 @@ type stateTypes = {
     isEditable: boolean;
     title: string;
 };
-class Local extends Component<propTypes, stateTypes> {
+class Report extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
         this.state = {isDialog: false, details: null, isEditable: true, title: ''};
@@ -37,65 +38,37 @@ class Local extends Component<propTypes, stateTypes> {
             />
         );
         const columns = [{
-            title: '资源名称',
-            dataIndex: 'id',
-            width: 150,
-        }, {
-            title: '资源英文名',
-            dataIndex: 'name',
-            width: 150,
-        }, {
-            title: '行业分类',
-            dataIndex: 'ip',
-            width: 150,
-        }, {
             title: '业务分类',
-            dataIndex: 'hostType',
-            width: 150,
+            dataIndex: 'id',
+            width: '10%',
         }, {
-            title: '所属应用系统',
-            dataIndex: 'hostType',
-            width: 150,
+            title: '所属目录编号',
+            dataIndex: 'name',
+            width: '15%',
         }, {
-            title: '要素分类',
-            dataIndex: 'hostType',
-            width: 150,
+            title: '所属目录对象名称',
+            dataIndex: 'ip',
+            width: '15%',
         }, {
-            title: '数据来源',
+            title: '数据资源编号',
             dataIndex: 'hostType',
-            width: 150,
+            width: '15%',
         }, {
-            title: '数据获取方式',
+            title: '数据资源名称',
             dataIndex: 'hostType',
-            width: 150,
+            width: '15%',
         }, {
             title: '资源提供单位',
             dataIndex: 'hostType',
-            width: 150,
+            width: '10%',
         }, {
-            title: '更新周期',
+            title: '资源事权单位',
             dataIndex: 'hostType',
-            width: 150,
+            width: '10%',
         }, {
-            title: '数据总量',
+            title: '操作',
             dataIndex: 'hostType',
-            width: 150,
-        }, {
-            title: '数据增量',
-            dataIndex: 'hostType',
-            width: 150,
-        }, {
-            title: '业务更新时间',
-            dataIndex: 'hostType',
-            width: 150,
-        }, {
-            title: '本地入库时间',
-            dataIndex: 'hostType',
-            width: 150,
-        }, {
-            title: '是否主表',
-            dataIndex: 'hostType',
-            width: 150,
+            width: '10%',
         }];
         const data = [{
             key: '1',
@@ -118,13 +91,18 @@ class Local extends Component<propTypes, stateTypes> {
         }];
         const onRow = (record: any) => {
             return {
-              onDoubleClick: () => { this.changeDialog(true, null, false, '详情'); },
+                onDoubleClick: () => { this.changeDialog(true, null, false, '详情'); },
             };
         };
         return (
             <div className={'module'}>
                 <div className={'sub-tree'}>
-                    <div title={'数据资源目录'} className={'title'}>数据资源目录</div>
+                    <div title={'数据资源目录'} className={'title'}>
+                        <Select size={'small'} style={{width: '100%'}}>
+                            <Option value={'1'}>扩张数据项集</Option>
+                            <Option value={'2'}>公安数据资源目录V2.0</Option>
+                        </Select>
+                    </div>
                     <Tree showLine={true}>
                         <TreeNode title="数据库服务器" key="0-0-0" />
                         <TreeNode title="应用服务器" key="0-0-1" />
@@ -135,20 +113,21 @@ class Local extends Component<propTypes, stateTypes> {
                 <div className={'right-board'} style={isAction ? {height} : {height: height - 40}}>
                     <div className={'back-white'}>
                         <div className={'action-bar'}>
-                            <div  className={'input-bar'}>
+                            <div  className={'input-bar'} style={{width: 300}}>
                                 <InputGroup
-                                    placeholder="请输入表中文名或表英文名"
+                                    placeholder="请输入所属目录对象名称或数据资源名称"
                                     rightElement={lockButton}
                                     small={true}
                                     type={'text'}
                                 />
                             </div>
                             <ButtonGroup style={{float: 'right'}}>
-                                <Button text={'导出'} small={true} intent={Intent.PRIMARY}/>&nbsp;
-                                <Button text={'取消挂接'} small={true} intent={Intent.PRIMARY}/>
+                                <span style={{color: 'red'}}>提示:请生成编号后再进行导出上报操作!</span>&nbsp;
+                                <Button icon={'refresh'} text={'生成编号'} small={true} intent={Intent.PRIMARY}/>&nbsp;
+                                <Button icon={'cloud-upload'} text={'全量导出上报'} small={true} intent={Intent.PRIMARY}/>
                             </ButtonGroup>
                         </div>
-                        <Table  rowSelection={{}} onRow={onRow} className={'table table-point'} pagination={false} columns={columns} dataSource={data} size="small" bordered={true} scroll={{x: 2250}}/>
+                        <Table onRow={onRow} className={'table'} pagination={false} columns={columns} dataSource={data} size="small" bordered={true}/>
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
                         {isDialog ? <LocalDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
                     </div>
@@ -157,4 +136,4 @@ class Local extends Component<propTypes, stateTypes> {
         );
     }
 }
-export default Local;
+export default Report;

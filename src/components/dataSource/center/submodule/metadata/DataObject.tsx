@@ -122,7 +122,7 @@ class DataObject extends Component<propTypes, stateTypes> {
                         <TreeNode title="未分类" key="3" />
                     </Tree>
                 </div>
-                <div className={'right-board'} style={isAction ? {height} : {height: height - 40}}>
+                <div className={'right-board'} style={isAction ? {height, width: 'calc(100% - 205px)'} : {height: height - 40, width}}>
                     <div className={'back-white'}>
                         <div className={'action-bar'}>
                             <div  className={'input-bar'}>

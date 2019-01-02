@@ -9,6 +9,10 @@ import Benchmarke from '../components/dataSource/center/submodule/standard/Bench
 import Metadata from '../components/dataSource/center/submodule/standard/Metadata';
 import DatabaseInfo from '../components/dataSource/center/submodule/standard/DatabaseInfo';
 import Local from '../components/dataSource/center/submodule/catalogue/Local';
+import Report from '../components/dataSource/center/submodule/catalogue/Report';
+import Apply from '../components/dataSource/center/submodule/catalogue/Apply';
+import Total from '../components/dataSource/center/submodule/monitor/Total';
+import Uniformity from '../components/dataSource/center/submodule/monitor/Uniformity';
 import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
 import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
 import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
@@ -37,15 +41,15 @@ export const LEFT_MENUS = [
         ]},
     {name: '数据编目管理', path: 'catalogue', component: null, children: [
             {name: '本地数据目录', path: 'catalogue/local', component: Local, children: []},
-            {name: '数据编目上报', path: 'catalogue/report', component: null, children: []},
-            {name: '数据申请', path: 'catalogue/apply', component: null, children: []},
+            {name: '数据编目上报', path: 'catalogue/report', component: Report, children: []},
+            {name: '数据申请', path: 'catalogue/apply', component: Apply, children: []},
         ]},
     {name: '数据监控管理', path: 'monitor', component: null, children: [
             {name: '服务器监控配置', path: 'monitor/server', component: null, children: []},
             {name: '数据源监控配置', path: 'monitor/dataSource', component: null, children: []},
             {name: '运行监控结果', path: 'monitor/run', component: null, children: []},
-            {name: '监控总量统计', path: 'monitor/total', component: null, children: []},
-            {name: '数据总量一致性监控', path: 'monitor/uniformity', component: null, children: []},
+            {name: '监控总量统计', path: 'monitor/total', component: Total, children: []},
+            {name: '数据总量一致性监控', path: 'monitor/uniformity', component: Uniformity, children: []},
         ]},
     {name: '数据质量监控管理', path: 'quality', component: null, children: [
             {name: '数据质量评估', path: 'quality/assessment', component: null, children: []},
