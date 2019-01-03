@@ -14,3 +14,8 @@ declare var System: System;
 
 declare const process: any;
 declare const require: any;
+
+declare module '*.scss' {
+    const content: {[className: string]: string};
+    export = content;
+}

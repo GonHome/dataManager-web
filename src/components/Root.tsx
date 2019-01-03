@@ -3,7 +3,6 @@ import {path} from '../models/models';
 import {routeTypes} from '../reducers/router';
 import Router from './Router';
 import HeadRouter from './HeadRouter';
-import '../styles/index.scss';
 type propTypes = {
     initRouter: (paths: path[]) => void;
     paths: path[];

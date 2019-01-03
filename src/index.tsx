@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import RootContainer from './containers/RootContainer';
 import store from './store';
-import './styles/index.css';
+import './styles/index.scss';
 
 const Root = () => (
   <div>

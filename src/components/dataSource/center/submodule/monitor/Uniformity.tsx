@@ -93,7 +93,7 @@ class Uniformity extends Component<propTypes, stateTypes> {
             width: 200,
             render: (text: string, record: any) => (
                 <Row>
-                    <Col span={6} title={'执行'}>
+                    <Col span={6} title={'执行12'}>
                         <Button icon={<Icon icon={'play'} color={'#1f88d1'}/>}  minimal={true} small={true}/>
                     </Col>
                     <Col span={6} title={'修改'}>
