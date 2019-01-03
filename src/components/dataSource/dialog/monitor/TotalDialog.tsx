@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Modal, Button, Steps, Form} from 'antd';
-import Basis from '../../form/monitor/Basis';
-import ConfigForm from '../../form/monitor/ConfigForm';
+import TotalBasis from '../../form/monitor/TotalBasis';
+import TotalConfigForm from '../../form/monitor/TotalConfigForm';
 const Step = Steps.Step;
 type propTypes = {
     details: any;
@@ -39,7 +39,7 @@ class TotalDialog extends Component<propTypes, stateTypes> {
     render() {
         const {width} = this.props;
         const {current} = this.state;
-        const WrappedForm = Form.create()(ConfigForm);
+        const WrappedForm = Form.create()(TotalConfigForm);
         return (
             <Modal
                 className={'small-modal'}
@@ -55,7 +55,7 @@ class TotalDialog extends Component<propTypes, stateTypes> {
                     <Step  title="基本信息" key={1} />
                     <Step  title="调度信息" key={2} />
                 </Steps>
-                {current === 0 ? <Basis {...this.props} /> : <WrappedForm />}
+                {current === 0 ? <TotalBasis {...this.props} /> : <WrappedForm />}
             </Modal>
         );
     }

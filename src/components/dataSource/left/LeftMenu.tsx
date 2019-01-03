@@ -38,7 +38,7 @@ class LeftMenu extends Component<propTypes> {
 
     // @ts-ignore
     selectChange = ({ item, key, selectedKeys }) => {
-        window.location.href = `/dataSource/manage/${selectedKeys[0]}`;
+        window.location.href = `#/dataSource/manage/${selectedKeys[0]}`;
     };
 
     render() {

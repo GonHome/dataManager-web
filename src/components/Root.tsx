@@ -15,6 +15,9 @@ type propTypes = {
 class Root extends Component<propTypes> {
     componentDidMount() {
         const {initRouter, paths, initEnvironment} = this.props;
+        window.onpopstate = (e) => {
+            initRouter(paths);
+        };
         initRouter(paths);
         initEnvironment();
         window.onresize = () => initEnvironment();

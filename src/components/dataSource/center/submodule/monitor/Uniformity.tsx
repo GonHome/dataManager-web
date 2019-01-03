@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Table, Pagination, Row, Col } from 'antd';
 import {InputGroup, Button, Intent, Icon} from '@blueprintjs/core';
-import TotalDialog from '../../../dialog/monitor/TotalDialog';
-import TotalTblDialog from '../../../dialog/monitor/TotalTblDialog';
+import UniformityDialog from '../../../dialog/monitor/UniformityDialog';
+import UniformityLogDialog from '../../../dialog/monitor/UniformityLogDialog';
 type propTypes = {
     height: number;
     width: number;
@@ -12,7 +12,7 @@ type propTypes = {
 };
 type stateTypes = {
     isDialog: boolean;
-    isTblDialog: boolean;
+    isLogDialog: boolean;
     details: any;
     isEditable: boolean;
     title: string;
@@ -20,18 +20,18 @@ type stateTypes = {
 class Uniformity extends Component<propTypes, stateTypes> {
     constructor(props: propTypes) {
         super(props);
-        this.state = {isDialog: false, isTblDialog: false, details: null, isEditable: true, title: ''};
+        this.state = {isDialog: false, isLogDialog: false, details: null, isEditable: true, title: ''};
     }
 
     changeDialog = (isDialog: boolean, details: any, isEditable: boolean, title: string) => {
         this.setState({isDialog, details, isEditable, title});
     };
-    changeTblDialog = (isTblDialog: boolean, details: any, isEditable: boolean, title: string) => {
-        this.setState({isTblDialog, details, isEditable, title});
+    changeLogDialog = (isLogDialog: boolean, details: any, isEditable: boolean, title: string) => {
+        this.setState({isLogDialog, details, isEditable, title});
     };
     render() {
         const {height, isAction, width} = this.props;
-        const {isDialog, isTblDialog, details, isEditable, title} = this.state;
+        const {isDialog, isLogDialog, details, isEditable, title} = this.state;
         const lockButton = (
             <Button
                 icon={'search'}
@@ -93,17 +93,17 @@ class Uniformity extends Component<propTypes, stateTypes> {
             width: 200,
             render: (text: string, record: any) => (
                 <Row>
-                    <Col span={6} title={'执行12'}>
+                    <Col span={6} title={'执行'}>
                         <Button icon={<Icon icon={'play'} color={'#1f88d1'}/>}  minimal={true} small={true}/>
                     </Col>
                     <Col span={6} title={'修改'}>
-                        <Button icon={<Icon icon={'edit'} color={'#1f88d1'}/>} minimal={true} small={true} onClick={() => this.changeDialog(true, null , false, '')}/>
+                        <Button icon={<Icon icon={'edit'} color={'#1f88d1'}/>} minimal={true} small={true} onClick={() => this.changeDialog(true, null , false, '编辑数据总量一致性校验方案')}/>
                     </Col>
                     <Col span={6} title={'日志'}>
-                        <Button icon={<Icon icon={'application'} color={'#1f88d1'}/>} minimal={true} small={true} onClick={() => this.changeTblDialog(true, null , false, '')}/>
+                        <Button icon={<Icon icon={'application'} color={'#1f88d1'}/>} minimal={true} small={true} onClick={() => this.changeLogDialog(true, null , false, '方案调度日志')}/>
                     </Col>
                     <Col span={6} title={'删除'}>
-                        <Button icon={<Icon icon={'trash'} color={'#1f88d1'}/>} minimal={true} small={true} onClick={() => this.changeTblDialog(true, null , false, '')}/>
+                        <Button icon={<Icon icon={'trash'} color={'#1f88d1'}/>} minimal={true} small={true} />
                     </Col>
                 </Row>),
         }];
@@ -139,12 +139,12 @@ class Uniformity extends Component<propTypes, stateTypes> {
                                     type={'text'}
                                 />
                             </div>
-                            <Button style={{float: 'right'}} icon={'plus'} text={'新增'} small={true} intent={Intent.PRIMARY}/>
+                            <Button style={{float: 'right'}} icon={'plus'} text={'新增'} small={true} intent={Intent.PRIMARY} onClick={() => this.changeDialog(true, null , false, '新增数据总量一致性校验方案')}/>
                         </div>
                         <Table className={'table'} pagination={false} columns={columns} dataSource={data} size="small" bordered={true} scroll={{x: 1470}}/>
                         <Pagination className={'page'} size="small" total={50} showSizeChanger={true} showQuickJumper={true} />
-                        {isDialog ? <TotalDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
-                        {isTblDialog ? <TotalTblDialog {...{details, isEditable, title, width}} changeDialog={this.changeTblDialog} /> : null}
+                        {isDialog ? <UniformityDialog {...{details, isEditable, title, width}} changeDialog={this.changeDialog} /> : null}
+                        {isLogDialog ? <UniformityLogDialog {...{details, isEditable, title, width}} changeDialog={this.changeLogDialog} /> : null}
                     </div>
                 </div>
             </div>

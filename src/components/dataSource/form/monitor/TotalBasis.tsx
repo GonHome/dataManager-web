@@ -10,7 +10,7 @@ type propTypes = {
     title: string;
 };
 
-class Basis extends Component<propTypes> {
+class TotalBasis extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -55,4 +55,4 @@ class Basis extends Component<propTypes> {
     }
 }
 
-export default Basis;
+export default TotalBasis;

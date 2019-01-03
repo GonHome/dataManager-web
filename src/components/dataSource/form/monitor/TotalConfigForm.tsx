@@ -17,7 +17,7 @@ const formItemLayoutArea = {
         },
     },
 };
-class ConfigForm extends Component<propTypes> {
+class TotalConfigForm extends Component<propTypes> {
     constructor(props: propTypes) {
         super(props);
     }
@@ -112,4 +112,4 @@ class ConfigForm extends Component<propTypes> {
         );
     }
 }
-export default ConfigForm;
+export default TotalConfigForm;
