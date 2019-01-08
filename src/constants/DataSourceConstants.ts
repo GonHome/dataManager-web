@@ -13,6 +13,8 @@ import Report from '../components/dataSource/center/submodule/catalogue/Report';
 import Apply from '../components/dataSource/center/submodule/catalogue/Apply';
 import Total from '../components/dataSource/center/submodule/monitor/Total';
 import Uniformity from '../components/dataSource/center/submodule/monitor/Uniformity';
+import Assessment from '../components/dataSource/center/submodule/quality/Assessment';
+import Method from '../components/dataSource/center/submodule/quality/Method';
 import AliyunForm from '../components/dataSource/form/metadata/databaseForms/AliyunForm';
 import GbaseForm from '../components/dataSource/form/metadata/databaseForms/GbaseForm';
 import HanaForm from '../components/dataSource/form/metadata/databaseForms/HanaForm';
@@ -52,8 +54,8 @@ export const LEFT_MENUS = [
             {name: '数据总量一致性监控', path: 'monitor/uniformity', component: Uniformity, children: []},
         ]},
     {name: '数据质量监控管理', path: 'quality', component: null, children: [
-            {name: '数据质量评估', path: 'quality/assessment', component: null, children: []},
-            {name: '校验方法管理', path: 'quality/method', component: null, children: []},
+            {name: '数据质量评估', path: 'quality/assessment', component: Assessment, children: []},
+            {name: '校验方法管理', path: 'quality/method', component: Method, children: []},
             {name: '基础监测方案管理', path: 'quality/basicsProgramme', component: null, children: []},
             {name: '数据质量监测任务管理', path: 'quality/task', component: null, children: []},
             {name: '数据质量监测日志管理', path: 'quality/log', component: null, children: []},

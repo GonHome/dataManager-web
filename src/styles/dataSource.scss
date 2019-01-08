@@ -132,6 +132,9 @@ $active-blue-color:rgb(72,175,240);
           }
           .table{
             height: calc(100% - 50px);
+            .ant-table-header::-webkit-scrollbar{
+              width: 0;
+            }
           }
           .table-point{
             .ant-table-row{
@@ -205,6 +208,9 @@ $active-blue-color:rgb(72,175,240);
       }
       .table{
         height: calc(100% - 50px);
+        .ant-table-header::-webkit-scrollbar{
+          width: 0;
+        }
       }
       .page{
         float: right;
@@ -325,6 +331,9 @@ $active-blue-color:rgb(72,175,240);
   }
   .table{
     height: calc(100% - 27px);
+    .ant-table-header::-webkit-scrollbar{
+      width: 0;
+    }
   }
   .page{
     float: right;
